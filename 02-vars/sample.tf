@@ -30,5 +30,5 @@ output "number" {
     ]
  }
 output "List_vars_op" {
-    value = "Welcome to ${var.sample_list[0]} ${var.sample_list[1]} and duration of ${var.sample_list[4]}"
+    value = "Welcome to ${var.sample_list[0]} ${var.sample_list[1]} and duration is ${var.sample_list[4]}"
 }
