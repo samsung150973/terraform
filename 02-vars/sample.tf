@@ -9,3 +9,11 @@ output "sample_op" {
 output "sample_op1" {
     value       = "value of sample variable is ${var.sample}"
 }
+
+variable "integer" {
+    default = 1000
+}
+
+output "number" {
+    value = var.integer
+}
