@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami                   = "ami-004c65616d53d05f6"
   instance_type         = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.b53_allow_ssh_sgm.id]   # Security group is created below. never hard-code 
+  vpc_security_group_ids = [aws_security_group.b53_allow_ssh_sgm.id] 
 
   tags = {
     Name = "Terraform_Instance"
