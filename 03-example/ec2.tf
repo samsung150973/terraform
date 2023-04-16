@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami                   = "ami-004c65616d53d05f6"
   instance_type         = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.id] 
+  vpc_security_group_ids = [aws_security_group.allow_ssh_sg.id] 
 
   tags = {
     Name = "Terraform_Instance"
@@ -20,7 +20,7 @@ output "private_dns_of_ec2" {
 }
 
 #create a new security group
-resource "aws_security_group" "allow_ssh" {
+resource "aws_security_group" "allow_ssh_sg" {
   name        = "b53_allow_ssh_sgm"
   description = "Allow SSH traffic"
   # vpc_id      = aws_vpc.main.id   (will see it later)
