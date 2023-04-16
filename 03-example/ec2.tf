@@ -21,7 +21,7 @@ output "private_dns_of_ec2" {
 
 #create a new security group
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+  name        = "b53_allow_ssh_sgm"
   description = "Allow SSH traffic"
   # vpc_id      = aws_vpc.main.id   (will see it later)
 
