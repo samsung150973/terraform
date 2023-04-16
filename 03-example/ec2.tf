@@ -22,7 +22,7 @@ output "private_dns_of_ec2" {
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH traffic"
-  vpc_id      = aws_vpc.main.id
+  # vpc_id      = aws_vpc.main.id   (will see it later)
 
   ingress {
     description      = "SSH from VPC"
