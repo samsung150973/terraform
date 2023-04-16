@@ -47,7 +47,7 @@ output "List_mapvars_op" {
 }
 
 #declare an empty variable
-variable "Name_of_city" {}
+variable "city" {}
 
 output "city_name" {
     value = var.city
