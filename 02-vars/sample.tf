@@ -45,3 +45,11 @@ output "List_vars_op" {
 output "List_mapvars_op" {
     value = "Welcome to ${var.sample_mapvar["Mode"]} ${var.sample_mapvar["Training"]} at ${var.sample_mapvar["Timing"]}"
 }
+
+# declare an empty variable
+variable "city" {}
+
+output "city_name" {
+    value = var.city
+}
+
