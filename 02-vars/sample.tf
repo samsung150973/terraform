@@ -69,4 +69,4 @@ variable "country"{}
 output "country_name" {
     value ="name of country is ${var.country}"
 }
-}
+
