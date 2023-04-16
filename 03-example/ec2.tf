@@ -41,6 +41,6 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name = "allow_ssh"
+    Name = "b53_allow_ssh_sgm"
   }
 }
