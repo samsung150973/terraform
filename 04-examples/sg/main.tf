@@ -27,5 +27,5 @@ resource "aws_security_group" "allow_ssh_sg" {
 
 #Delclare as output to be used in ec2 
 output "sg_id" {
-    value = "aws_security_group.allow_ssh_sg.id"
+    value = aws_security_group.allow_ssh_sg.id
 }

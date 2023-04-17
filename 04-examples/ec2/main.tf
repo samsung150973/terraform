@@ -3,7 +3,7 @@
 resource "aws_instance" "web" {
   ami                   = "ami-004c65616d53d05f6"
   instance_type         = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.allow_ssh_sg.id] 
+  vpc_security_group_ids = [var.sg] 
 
   tags = {
     Name = "Terraform_Instance"
