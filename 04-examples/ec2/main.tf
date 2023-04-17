@@ -1,7 +1,7 @@
 
 # Bloack to Create an EC2 instance
 resource "aws_instance" "web" {
-  ami                   = "ami-004c65616d53d05f6"
+  ami                   = "data.aws_ami.my_ami.image_id"
   instance_type         = "t3.micro"
   vpc_security_group_ids = [var.sg] 
 
